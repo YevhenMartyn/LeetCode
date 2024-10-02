@@ -1,7 +1,7 @@
 ﻿using System;
 
 
-public class Solution
+public class SolutionTwoSum2
 {
     public int[] TwoSum(int[] nums, int target)
     {
