@@ -47,17 +47,18 @@ public class Solution13
 {
     public int RomanToInt(string s)
     {
-        var romanNumbers = new Dictionary<char, int>();
-        romanNumbers.Add('I', 1);
-        romanNumbers.Add('V', 5);
-        romanNumbers.Add('X', 10);
-        romanNumbers.Add('L', 50);
-        romanNumbers.Add('C', 100);
-        romanNumbers.Add('D', 500);
-        romanNumbers.Add('M', 1000);
+        var romanNumbers = new Dictionary<char, int> {
+            { 'I', 1 },
+            { 'V', 5 },
+            { 'X', 10 },
+            { 'L', 50 },
+            { 'C', 100 },
+            { 'D', 500 },
+            { 'M', 1000 }
+        };
 
 
-        var previousCharacter = 'a';
+        var previousCharacter = 'x';
         int result = 0;
         for (int i = 0; i < s.Length; i++)
         {
